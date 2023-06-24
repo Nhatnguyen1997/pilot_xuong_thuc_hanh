@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemcar"
+    android:background="@drawable/custome_listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/t1"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Xe : "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hãng Xe : "
+            android:layout_below="@id/a1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm Sản Xuất : "
+            android:layout_below="@+id/a2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá Bán : "
+            android:layout_below="@+id/a3"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/t1">
+
+        <TextView
+            android:id="@+id/item_tenxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMW - 320i"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/item_hangsx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tenxe"
+            android:text="BMW"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_namsx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_hangsx"
+            android:text="2020"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_giaban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_namsx"
+            android:text="2000"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_namsx"
+            android:layout_toEndOf="@id/item_giaban"
+            android:layout_marginLeft="5dp"
+            android:text="$"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/item_delete"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_delete_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
